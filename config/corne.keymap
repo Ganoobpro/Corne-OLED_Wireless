@@ -9,6 +9,50 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        lctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <16 14>;
+        };
+
+        lalt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <16 13>;
+        };
+
+        lsuper {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <16 12>;
+        };
+
+        lshift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <16 15>;
+        };
+
+        rshift {
+            bindings = <&kp RSHIFT>;
+            key-positions = <19 20>;
+        };
+
+        rctrl {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <19 21>;
+        };
+
+        ralt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <19 22>;
+        };
+
+        rsuper {
+            bindings = <&kp RIGHT_WIN>;
+            key-positions = <19 23>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,10 +64,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E     &kp R  &kp T       &kp Y      &kp U  &kp I      &kp O    &kp P     &kp MINUS
-&mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F  &kp G       &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp CAPS       &kp Z  &kp X  &kp C     &kp V  &kp B       &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                             &kp BSLH  &mo 1  &kp BSPC    &kp SPACE  &mo 2  &mo 4
+&kp BACKSLASH  &kp Q  &kp W  &kp E    &kp R  &kp T       &kp Y      &kp U  &kp I      &kp O    &kp P     &kp MINUS
+&mt LCTRL ESC  &kp A  &kp S  &kp D    &kp F  &kp G       &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp CAPS       &kp Z  &kp X  &kp C    &kp V  &kp B       &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                             &kp TAB  &to 1  &kp BSPC    &kp SPACE  &to 2  &to 4
             >;
         };
 
@@ -38,7 +82,7 @@
 &kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5      &kp Y      &kp U  &kp I      &kp O    &kp P     &kp MINUS
 &kp ESC    &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp LBKT    &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
 &trans     &kp F1    &kp F2    &kp F3     &kp F4     &kp F5      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                               &trans     &mo 0      &kp BSPC    &kp SPACE  &mo 3  &trans
+                               &trans     &to 0      &kp BSPC    &kp SPACE  &to 3  &trans
             >;
         };
 
@@ -53,7 +97,7 @@
 &kp TAB    &kp Q  &kp W  &kp E          &kp R  &kp T       &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp F12
 &kp LCTRL  &kp A  &kp S  &kp D          &kp F  &kp G       &kp RBKT   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
 &kp CAPS   &kp Z  &kp X  &kp C          &kp V  &kp B       &kp F6     &kp F7     &kp F8     &kp F9    &kp F10   &kp F11
-                         &kp BACKSLASH  &mo 3  &kp BSPC    &kp SPACE  &mo 0      &kp RALT
+                         &kp BACKSLASH  &to 3  &kp BSPC    &kp SPACE  &to 0      &kp RALT
             >;
         };
 
@@ -62,7 +106,7 @@
 &kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5      &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp F12
 &kp ESC    &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp LBKT    &kp RBKT   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
 &trans     &kp F1    &kp F2    &kp F3     &kp F4     &kp F5      &kp F6     &kp F7     &kp F8     &kp F9    &kp F10   &kp F11
-                               &trans     &mo 0      &kp BSPC    &kp SPACE  &mo 0      &trans
+                               &trans     &to 0      &kp BSPC    &kp SPACE  &to 0      &trans
             >;
         };
 
@@ -71,7 +115,7 @@
 &trans  &trans  &trans          &trans        &trans          &trans             &mkp MB4        &kp PG_DN       &kp PG_UP     &mkp MB5         &kp HOME  &kp DELETE
 &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp END   &kp INSERT
 &trans  &trans  &trans          &trans        &trans          &trans             &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans    &trans
-                                &trans        &mo 1           &mo 0              &mo 0           &mo 2           &trans
+                                &trans        &to 1           &to 0              &to 0           &to 2           &trans
             >;
         };
     };
