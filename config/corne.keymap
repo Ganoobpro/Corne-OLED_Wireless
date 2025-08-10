@@ -95,7 +95,7 @@
 
             bindings = <
 &kp BACKSLASH  &kp Q  &kp W  &kp E    &kp R  &kp T       &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp F12
-&kp LCTRL      &kp A  &kp S  &kp D    &kp F  &kp G       &kp RBKT   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
+&mt LCTRL ESC  &kp A  &kp S  &kp D    &kp F  &kp G       &kp RBKT   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
 &kp CAPS       &kp Z  &kp X  &kp C    &kp V  &kp B       &kp F6     &kp F7     &kp F8     &kp F9    &kp F10   &kp F11
                              &kp TAB  &mo 3  &kp BSPC    &kp SPACE  &trans     &trans
             >;
