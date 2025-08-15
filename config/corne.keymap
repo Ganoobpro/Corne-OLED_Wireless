@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -64,14 +63,23 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F          &kp P  &kp G       &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp MINUS
-&mt LCTRL ESC  &kp A  &kp R  &kp S          &kp T  &kp D       &kp H      &kp N  &kp E      &kp I    &kp O     &kp ENTER
-&kp APOS       &kp Z  &kp X  &kp C          &kp V  &kp B       &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                             &kp BACKSLASH  &mo 1  &kp BSPC    &kp SPACE  &mo 2  &mo 4
+&kp TAB        &kp Q  &kp W  &kp F          &kp P     &kp G    &kp J  &kp L      &kp U      &kp Y    &kp SEMI  &kp MINUS
+&mt LCTRL ESC  &kp A  &kp R  &kp S          &kp T     &kp D    &kp H  &kp N      &kp E      &kp I    &kp O     &kp ENTER
+&kp APOS       &kp Z  &kp X  &kp C          &kp V     &kp B    &kp K  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                             &kp BACKSLASH  &kp BSPC  &mo 2    &mo 3  &kp SPACE  &mo 5
             >;
         };
 
-        left-homerow {
+        Qwerty-layout {
+            bindings = <
+&kp TAB         &kp Q  &kp W  &kp E    &kp R      &kp T    &kp Y  &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&kp LCTRL       &kp A  &kp S  &kp D    &kp F      &kp G    &kp H  &kp J     &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B    &kp N  &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                              &kp ESC  &kp SPACE  &mo 2    &mo 3  &kp BSPC  &mo 5
+            >;
+        };
+
+        Left-homerow {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -79,14 +87,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5      &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp MINUS
-&kp ESC    &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp LBKT    &kp H      &kp N  &kp E      &kp I    &kp O     &kp ENTER
-&kp CAPS   &kp F1    &kp F2    &kp F3     &kp F4     &kp F5      &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                               &trans     &trans     &trans      &kp SPACE  &mo 3  &mo 4
+&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5      &kp J  &kp L      &kp U      &kp Y    &kp SEMI  &kp MINUS
+&kp ESC    &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp LBKT    &kp H  &kp N      &kp E      &kp I    &kp O     &kp ENTER
+&kp CAPS   &kp F1    &kp F2    &kp F3     &kp F4     &kp F5      &kp K  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                               &trans     &trans     &trans      &mo 4  &kp SPACE  &mo 5
             >;
         };
 
-        right-homerow {
+        Right-homerow {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -94,14 +102,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F    &kp P  &kp G       &kp N6    &kp N7     &kp N8     &kp N9        &kp N0    &kp F12
-&mt LCTRL ESC  &kp A  &kp R  &kp S    &kp T  &kp D       &kp RBKT  &kp RSHFT  &kp RCTRL  &kp LEFT_ALT  &kp RGUI  &kp ENTER
-&kp CAPS       &kp Z  &kp X  &kp C    &kp V  &kp B       &kp F6    &kp F7     &kp F8     &kp F9        &kp F10   &kp F11
-                             &kp TAB  &mo 3  &kp BSPC    &trans    &trans     &trans
+&kp TAB        &kp Q  &kp W  &kp F    &kp P     &kp G    &kp N6    &kp N7     &kp N8     &kp N9        &kp N0    &kp F12
+&mt LCTRL ESC  &kp A  &kp R  &kp S    &kp T     &kp D    &kp RBKT  &kp RSHFT  &kp RCTRL  &kp LEFT_ALT  &kp RGUI  &kp ENTER
+&kp CAPS       &kp Z  &kp X  &kp C    &kp V     &kp B    &kp F6    &kp F7     &kp F8     &kp F9        &kp F10   &kp F11
+                             &kp TAB  &kp BSPC  &mo 4    &trans    &trans     &trans
             >;
         };
 
-        homerow {
+        Homerow {
             bindings = <
 &kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5      &kp N6    &kp N7     &kp N8     &kp N9        &kp N0    &kp F12
 &kp ESC    &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp LBKT    &kp RBKT  &kp RSHFT  &kp RCTRL  &kp LEFT_ALT  &kp RGUI  &kp ENTER
@@ -110,21 +118,12 @@
             >;
         };
 
-        vim-navigate {
+        Vim-navigate {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4        &kp PG_DN       &kp PG_UP     &mkp MB5         &kp HOME  &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp END   &kp INSERT
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &to 0     &to 5
-                        &trans  &trans  &trans    &trans          &trans          &trans
-            >;
-        };
-
-        Qwerty-layout {
-            bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y          &kp U  &kp I      &kp O    &kp P     &kp MINUS
-&mt LCTRL ESC   &kp A  &kp S  &kp D     &kp F  &kp G        &kp H          &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                              &kp BSLH  &to 1  &kp SPACE    &kp BACKSPACE  &to 2  &to 4
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN             &kp PG_UP             &kp END    &kp DEL     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN              &kp UP                &kp RIGHT  &kp INSERT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans     &to 0       &to 1
+                        &trans  &trans  &trans    &trans    &trans                &trans
             >;
         };
     };
