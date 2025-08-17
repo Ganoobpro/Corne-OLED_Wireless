@@ -120,10 +120,10 @@
 
         Vim-navigate {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN             &kp PG_UP             &kp END    &kp DEL     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN              &kp UP                &kp RIGHT  &kp INSERT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans     &to 0       &to 1
-                        &trans  &trans  &trans    &trans    &trans                &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mt C_PREV HOME    &mt C_PLAY_PAUSE PAGE_DOWN  &mt C_RANDOM_PLAY PG_UP  &mt C_NEXT END   &kp DEL     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT           &kp DOWN                    &kp UP                   &kp RIGHT        &kp INSERT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kt C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC        &kp C_BRIGHTNESS_INC     &kt C_VOLUME_UP  &to 0       &to 1
+                        &trans  &trans  &trans    &trans             &trans                      &trans
             >;
         };
     };
