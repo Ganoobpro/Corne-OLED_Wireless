@@ -9,96 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        lsh: lshft_homerow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LSHFT_HOMEROW";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <160>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
-            require-prior-idle-ms = <140>;
-        };
-
-        lch: lctrl_homerow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LCTRL_HOMEROW";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
-            require-prior-idle-ms = <140>;
-        };
-
-        lah: lalt_homerow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LALT_HOMEROW";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
-            require-prior-idle-ms = <140>;
-        };
-
-        lwh: lwin_homerow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LWIN_HOMEROW";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <450>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
-            require-prior-idle-ms = <140>;
-        };
-
-        rsh: rshift_homerow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RSHIFT_HOMEROW";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <160>;
-            require-prior-idle-ms = <140>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
-        };
-
-        rch: rctrl_homerow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RCTRL_HOMEROW";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            require-prior-idle-ms = <140>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
-        };
-
-        rah: ralt_homerow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RALT_HOMEROW";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            require-prior-idle-ms = <140>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
-        };
-
-        rwh: rwin_homerow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RWIN_HOMEROW";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <450>;
-            require-prior-idle-ms = <140>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -110,19 +20,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q        &kp W        &kp F         &kp P         &kp G    &kp J  &kp L         &kp U         &kp Y        &kp SEMI     &kp PG_UP
-&mt LCTRL ESC  &lwh LGUI A  &lah LALT R  &lch LCTRL S  &lsh LSHFT T  &kp D    &kp H  &rsh RSHFT N  &rch RCTRL E  &rah LALT I  &rwh RGUI O  &kp RET
-&kp CAPS       &kp Z        &kp X        &kp C         &kp V         &kp B    &kp K  &kp M         &kp COMMA     &kp DOT      &kp FSLH     &kp PG_DN
-                                         &mo 6         &kp BSPC      &mo 4    &mo 5  &kp SPACE     &to 7
+&kp TAB        &kp Q  &kp W  &kp F  &kp P     &kp G    &kp J  &kp L      &kp U      &kp Y    &kp SEMI  &kp PG_UP
+&mt LCTRL ESC  &kp A  &kp R  &kp S  &kp T     &kp D    &kp H  &kp N      &kp E      &kp I    &kp O     &kp RET
+&kp CAPS       &kp Z  &kp X  &kp C  &kp V     &kp B    &kp K  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp PG_DN
+                             &mo 6  &kp BSPC  &mo 4    &mo 5  &kp SPACE  &to 7
             >;
         };
 
         Qwerty {
             bindings = <
-&kp TAB           &kp Q        &kp W        &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I         &kp O        &kp P                &kp PG_UP
-&mt LCTRL ESCAPE  &lwh LGUI A  &lah LALT S  &lch LCTRL D  &lsh LSHFT F  &kp G    &kp H  &rsh RSHFT J  &rch RCTRL K  &rah LALT L  &rwh RGUI SEMICOLON  &kp RET
-&kp CAPS          &kp Z        &kp X        &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA     &kp DOT      &kp FSLH             &kp PG_DN
-                                            &mo 7         &kp BSPC      &mo 4    &mo 5  &kp SPACE     &mo 7
+&kp TAB           &kp Q  &kp W  &kp E  &kp R     &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp PG_UP
+&mt LCTRL ESCAPE  &kp A  &kp S  &kp D  &kp F     &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp RET
+&kp CAPS          &kp Z  &kp X  &kp C  &kp V     &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp PG_DN
+                                &mo 7  &kp BSPC  &mo 4    &mo 5  &kp SPACE  &mo 7
             >;
         };
 
