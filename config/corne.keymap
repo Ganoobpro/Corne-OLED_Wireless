@@ -20,7 +20,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F  &kp P     &kp G    &kp J  &kp L      &kp U      &kp Y    &kp SEMI  &none
+&kp TAB        &kp Q  &kp W  &kp F  &kp P     &kp G    &kp J  &kp L      &kp U      &kp Y    &kp SEMI  &trans
 &mt LCTRL ESC  &kp A  &kp R  &kp S  &kp T     &kp D    &kp H  &kp N      &kp E      &kp I    &kp O     &kp RET
 &kp CAPS       &kp Z  &kp X  &kp C  &kp V     &kp B    &kp K  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mo 9
                              &mo 8  &kp BSPC  &mo 6    &mo 8  &kp SPACE  &mo 7
@@ -29,7 +29,7 @@
 
         Qwerty {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E  &kp R     &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &none
+&kp TAB           &kp Q  &kp W  &kp E  &kp R     &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &trans
 &mt LCTRL ESCAPE  &kp A  &kp S  &kp D  &kp F     &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp RET
 &kp CAPS          &kp Z  &kp X  &kp C  &kp V     &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mo 9
                                 &mo 8  &kp BSPC  &mo 6    &mo 8  &kp SPACE  &mo 7
@@ -38,37 +38,37 @@
 
         Gaming {
             bindings = <
-&kp ESC   &kp T      &kp Q  &kp W  &kp E      &kp R    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp PG_UP
+&kp ESC   &kp T      &kp Q  &kp W  &kp E      &kp R    &kp Y  &kp U      &kp I      &kp O    &kp P     &trans
 &kp TAB   &kp LSHFT  &kp A  &kp S  &kp D      &kp F    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp RET
-&kp CAPS  &kp LCTRL  &kp Z  &kp X  &kp C      &kp V    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp PG_DN
+&kp CAPS  &kp LCTRL  &kp Z  &kp X  &kp C      &kp V    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mo 9
                             &to 0  &kp SPACE  &mo 3    &mo 8  &kp SPACE  &mo 7
             >;
         };
 
         GamingNumber {
             bindings = <
-&none  &kp N6  &kp N7  &none   &kp N8  &kp N9    &none  &none  &none  &none  &none  &none
-&none  &none   &none   &none   &none   &kp N0    &none  &none  &none  &none  &none  &none
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &none  &none  &none  &none  &none  &none
-                       &none   &none   &none     &none  &none  &none
+&trans  &kp N6  &kp N7  &trans  &kp N8  &kp N9    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         Bluetooth {
             bindings = <
-&none       &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
-&none       &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-                                        &none         &none         &to 0           &none  &none  &none
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &to 0           &trans  &trans  &trans
             >;
         };
 
         VimNavigation {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none     &kp PG_UP  &kp PG_DN  &none      &none  &none
-&none  &none  &none  &none  &none  &none    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none
-&none  &none  &none  &none  &none  &none    &to 0     &to 1      &to 2      &to 4      &none  &none
-                     &none  &none  &none    &none     &none      &none
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp PG_UP  &kp PG_DN  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &to 0     &to 1      &to 2      &to 4      &trans  &trans
+                        &trans  &trans  &trans    &trans    &trans     &trans
             >;
         };
 
@@ -92,10 +92,10 @@
 
         Number {
             bindings = <
-&none     &kp PLUS  &kp MINUS  &kp STAR  &kp FSLH  &none     &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp PLUS  &kp MINUS  &kp STAR  &kp FSLH  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LGUI  &kp N1    &kp N2     &kp N3    &kp N4    &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
-&none     &kp N6    &kp N7     &kp N8    &kp N9    &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
-                               &none     &none     &none     &trans  &trans  &trans
+&trans    &kp N6    &kp N7     &kp N8    &kp N9    &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
 
