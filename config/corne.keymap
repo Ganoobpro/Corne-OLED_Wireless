@@ -83,10 +83,10 @@
 
         VimNavigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp PG_UP  &kp PG_DN  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &to 0     &to 1      &to 2      &to 4      &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_BRIGHTNESS_DEC  &kp PAGE_DOWN  &kp PG_UP     &kp C_BRIGHTNESS_INC  &to 0   &to 1
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT              &kp DOWN       &kp UP        &kp RIGHT             &to 2   &to 4
+&trans  &trans  &trans  &trans  &trans  &trans    &kp K_BACK            &kp C_VOL_DN   &kp C_VOL_UP  &kp K_FORWARD         &trans  &trans
+                        &trans  &trans  &trans    &trans                &trans         &trans
             >;
         };
 
