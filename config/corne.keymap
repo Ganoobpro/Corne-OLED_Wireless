@@ -67,19 +67,19 @@
 
         LeftHomerow {
             bindings = <
-&kp GRAVE  &kp EXCL     &kp AT     &kp HASH       &kp DOLLAR  &kp LEFT_BRACE          &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp LGUI     &kp LALT   &kp LCTRL      &kp LSHFT   &kp LEFT_PARENTHESIS    &trans  &trans  &trans  &trans  &trans  &trans
-&kp TILDE  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp STAR    &kp LBKT                &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans         &trans      &trans                  &trans  &trans  &trans
+&kp GRAVE  &kp EXCL   &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT         &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp LGUI   &kp LALT       &kp LCTRL     &kp LSHFT             &kp LEFT_BRACE      &trans  &trans  &trans  &trans  &trans  &trans
+&kp TILDE  &kp LCTRL  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &trans        &trans                &trans              &trans  &trans  &trans
             >;
         };
 
         RightHomerow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACE        &kp SQT    &kp DOUBLE_QUOTES  &kp MINUS  &kp UNDERSCORE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS  &kp RSHFT  &kp RCTRL          &kp LALT   &kp RGUI        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp RBKT               &kp EQUAL  &kp PLUS           &kp BSLH   &kp PIPE        &trans
-                        &trans  &trans  &trans    &trans                 &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp EQUAL          &kp SQT                &kp DOUBLE_QUOTES  &kp MINUS  &kp UNDERSCORE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACE    &kp RSHFT              &kp RCTRL          &kp LALT   &kp RGUI        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp PLUS           &kp BSLH   &kp PIPE        &trans
+                        &trans  &trans  &trans    &trans             &trans                 &trans
             >;
         };
 
@@ -94,10 +94,10 @@
 
         Number {
             bindings = <
-&kp C_AL_CALCULATOR  &kp PLUS  &kp MINUS  &kp STAR  &kp FSLH  &kp CARET    &trans  &trans  &trans  &trans  &trans  &trans
-&kp EQUAL            &kp N1    &kp N2     &kp N3    &kp N4    &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
-&kp DOT              &kp N6    &kp N7     &kp N8    &kp N9    &kp N0       &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans    &trans    &trans       &trans  &trans  &trans
+&kp C_AL_CALCULATOR  &kp PLUS   &kp N7  &kp N8  &kp N9  &kp CARET    &trans  &trans  &trans  &trans  &trans  &trans
+&kp STAR             &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT      &trans  &trans  &trans  &trans  &trans  &trans
+&kp SLASH            &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans  &trans  &trans       &trans  &trans  &trans
             >;
         };
 
