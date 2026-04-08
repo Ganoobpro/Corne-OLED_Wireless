@@ -69,7 +69,7 @@
             bindings = <
 &kp GRAVE  &kp EXCL   &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT         &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &kp LGUI   &kp LALT       &kp LCTRL     &kp LSHFT             &kp LEFT_BRACE      &trans  &trans  &trans  &trans  &trans  &trans
-&kp TILDE  &kp LCTRL  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &trans  &trans  &trans  &trans  &trans  &trans
+&kp TILDE  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &trans  &trans  &trans  &trans  &trans  &trans
                                      &trans        &trans                &trans              &trans  &trans  &trans
             >;
         };
