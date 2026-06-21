@@ -115,7 +115,7 @@
 
             bindings = <
 &kp CAPS        &kp Q              &kp W            &kp F              &kp P               &kp G        &kp J     &kp L               &kp U              &kp Y            &kp SEMI           &kp DOUBLE_QUOTES
-&mt LCTRL ESC   &hml_super LGUI A  &hml_alt LALT R  &hml_ctrl LCTRL S  &hml_shift LSHFT T  &kp D        &kp H     &hmr_shift RSHFT N  &hmr_ctrl RCTRL E  &hmr_alt LALT L  &hmr_super LGUI O  &kp SQT
+&mt LCTRL ESC   &hml_super LGUI A  &hml_alt LALT R  &hml_ctrl LCTRL S  &hml_shift LSHFT T  &kp D        &kp H     &hmr_shift RSHFT N  &hmr_ctrl RCTRL E  &hmr_alt LALT I  &hmr_super LGUI O  &kp SQT
 &kp LEFT_SHIFT  &kp Z              &kp X            &kp C              &kp V               &kp B        &kp K     &kp M               &kp COMMA          &kp DOT          &kp FSLH           &kp BACKSLASH
                                                     &mo 6              &lt 3 TAB           &kp SPACE    &kp BSPC  &lt 4 ENTER         &mo 7
             >;
